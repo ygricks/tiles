@@ -66,12 +66,17 @@ function draw(tiles) {
         }
     }
 
-    // head
-    ctx.drawImage(tiles, 15 * ts, 12 * ts, 2 * ts, 3 * ts, 100, 100, 2 * ts, 3 * ts);
-    // rock cup
-    ctx.drawImage(tiles, 17 * ts, 12 * ts, 1 * ts, 2 * ts, 100 - 32, 100 + 32, 1 * ts, 2 * ts);
+    // water
+    ctx.drawImage(tiles, 21 * ts, 17 * ts, 3 * ts, 1 * ts, 100 - ts * 2, 100 - ts * 2, 3 * ts, 1 * ts);
+    ctx.drawImage(tiles, 21 * ts, 17 * ts, 2 * ts, 1 * ts, 100 + ts, 100 - ts * 2, 2 * ts, 1 * ts);
+    // wall
+    ctx.drawImage(tiles, 21 * ts, 22 * ts, 5 * ts, 1 * ts, 100 - ts * 2, 100 - ts * 1, 5 * ts, 1 * ts);
     // waterfall
-    ctx.drawImage(tiles, 21 * ts, 12 * ts, 3 * ts, 4 * ts, 100 + 32 * 2, 100 - 32, 2 * ts, 4 * ts);
+    ctx.drawImage(tiles, 21 * ts, 12 * ts, 3 * ts, 4 * ts, 100 - ts, 100 - ts, 3 * ts, 4 * ts);
+    // rock cup
+    ctx.drawImage(tiles, 17 * ts, 12 * ts, 1 * ts, 2 * ts, 100, 100 + ts, 1 * ts, 2 * ts);
+    // head
+    ctx.drawImage(tiles, 15 * ts, 12 * ts, 2 * ts, 3 * ts, 100 + ts * 2, 100, 2 * ts, 3 * ts);
 }
 
 // run
