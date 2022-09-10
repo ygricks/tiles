@@ -18,17 +18,17 @@ function draw(tiles) {
         ctx.drawImage(tiles, 0, 0, width, height, 0, 0, width, height);
         if (data !== undefined) {
             // fill
-            ctx.fillStyle = 'rgba(150, 150, 150,.4)';
+            ctx.fillStyle = 'rgba(0, 0, 0,.4)';
             ctx.fillRect(data.x * ts, data.y * ts, ts, ts);
             // border
             ctx.lineWidth = 2;
             ctx.strokeStyle = 'red';
             ctx.strokeRect(data.x * ts, data.y * ts, ts, ts);
             // write
-            ctx.font = '17px serif';
+            ctx.font = '16px serif';
             ctx.fillStyle = 'lime';
-            ctx.fillText(data.x.toString(), data.x * ts + 6, data.y * ts + 14);
-            ctx.fillText(data.y.toString(), data.x * ts + 6, data.y * ts + 28);
+            ctx.fillText(data.x.toString(), data.x * ts + 2, data.y * ts + 14);
+            ctx.fillText(data.y.toString(), data.x * ts + 2, data.y * ts + 28);
         }
     }
 
